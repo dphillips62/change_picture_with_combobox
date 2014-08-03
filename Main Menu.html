@@ -3,12 +3,13 @@
 <head lang="en">
     <meta charset="UTF-8">
     <script type="text/javascript" src="mysrc.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
     <title></title>
 </head>
 <body>
 
 <h2>Select which Image you would like to use</h2>
-<select onchange="changeimage(this.value)" id = "Combo">
+<select onchange="changeimage(this.value)">
     <option value="a">a</option>
     <option value="b">b</option>
     <option value="c">c</option>
@@ -18,6 +19,11 @@
 <br>
 
 <img id="myimage" src = "./Images/a.jpeg" alt ="Image">
+
+<div style="position: relative; left: 0; top: 0;">
+    <img src="./Images/a.jpeg" style="position: relative; top: 0; left: 0;"/>
+    <img src="./Images/b.jpeg" style="position: absolute; top: 30px; left: 70px;"/>
+</div>
 
 
 </body>
